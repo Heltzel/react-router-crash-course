@@ -1,5 +1,8 @@
 import React from 'react'
+import RouterComp from './Router'
 
-export const App = () => {
-  return <div>App</div>
+const App = () => {
+  return <RouterComp />
 }
+
+export default App
