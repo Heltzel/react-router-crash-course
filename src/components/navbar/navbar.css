@@ -1,0 +1,25 @@
+nav {
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 26px;
+  color: #000;
+  margin-right: 16px;
+}
+
+.link {
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.link:hover {
+  text-decoration: none;
+}

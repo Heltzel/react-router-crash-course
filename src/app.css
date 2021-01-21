@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+button {
+  border: 1px solid gray;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 12px;
+}
+
+.link {
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.link:hover {
+  text-decoration: none;
+}

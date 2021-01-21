@@ -1,23 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// imported in router
+import './navbar.css'
+
+// this file is imported in router
 const Navbar = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+      <Link className="logo" to="/">
+        Brand-Logo
+      </Link>
+      <div className="nav-links">
+        <Link className="link" to="/about">
+          About
+        </Link>
+        <Link className="link" to="/contact">
+          Contact
+        </Link>
+        <Link className="link" to="/blog">
+          Blog
+        </Link>
+      </div>
     </nav>
   )
 }
