@@ -1,11 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Navbar from './components/navbar/Navbar'
-
-import About from './pages/About'
-import Blog from './pages/Blog'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
+import Navbar from '../components/navbar/Navbar'
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Blog from '../pages/blogs'
+import Contact from '../pages/Contact'
 
 const RouterComp = () => {
   return (
