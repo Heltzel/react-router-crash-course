@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Blog from '../pages/blogs'
 import Contact from '../pages/Contact'
+import Admin from '../pages/Admin'
 
 const RouterComp = () => {
   return (
@@ -22,6 +23,9 @@ const RouterComp = () => {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/admin">
+          <Admin />
         </Route>
       </Switch>
     </Router>
