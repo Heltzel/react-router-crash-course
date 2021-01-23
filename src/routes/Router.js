@@ -6,27 +6,30 @@ import About from '../pages/About'
 import Blog from '../pages/blogs'
 import Contact from '../pages/Contact'
 import Admin from '../pages/Admin'
+import PrivateRoute from './PrivateRoute'
+import Privateroute2 from './Privateroute2'
 
 const RouterComp = () => {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" exact>
+        {/* <Route path="/" exact>
           <Home />
-        </Route>
+        </Route> */}
+        <Route exact path="/" component={Home} />
+
         <Route path="/about">
           <About />
-        </Route>
-        <Route path="/blog">
-          <Blog />
         </Route>
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/admin">
+
+        <Privateroute2 path="/blog" component={Blog} />
+        <PrivateRoute path="/admin">
           <Admin />
-        </Route>
+        </PrivateRoute>
       </Switch>
     </Router>
   )
